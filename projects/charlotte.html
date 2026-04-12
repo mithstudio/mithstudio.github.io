@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 <title>House in Charlotte | Photorealistic ArchViz · Nowak Studio</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,200;0,300;0,400;0,600;1,200;1,300;1,400;1,600&family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Bebas+Neue&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,200;0,9..144,300;0,9..144,400;1,9..144,200;1,9..144,300;1,9..144,400&family=Syne:wght@300;400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/shared.css">
 <style>
 *{ margin:0; padding:0; box-sizing:border-box; }
@@ -31,7 +31,7 @@ nav{ background:rgba(12,10,7,.88); backdrop-filter:blur(18px); position:relative
 .cnt-fill{ position:absolute; top:0; left:0; height:100%; background:var(--gold); transition:width .4s ease; }
 #cnt-tot{ font-family:var(--serif); font-style:italic; font-size:14px; font-weight:200; color:var(--text-dim); min-width:24px; }
 #hint{ position:fixed; bottom:22px; right:44px; z-index:600; display:flex; align-items:center; gap:10px; transition:opacity .7s; background:rgba(12,10,7,.3); padding:5px 12px; border-radius:40px; backdrop-filter:blur(4px); }
-#hint span{ font-family:var(--mono); font-size:9px; font-weight:400; letter-spacing:.25em; text-transform:uppercase; color:var(--text-dim); }
+#hint span{ font-size:9px; font-weight:400; letter-spacing:.25em; text-transform:uppercase; color:var(--text-dim); }
 .h-line{ width:32px; height:1px; background:var(--gold); position:relative; overflow:hidden; }
 .h-line::after{ content:'';position:absolute; top:0; left:-100%; width:100%; height:100%; background:var(--text); animation:slide 2s ease-in-out infinite; }
 @keyframes slide{ 0%{left:-100%} 50%{left:100%} 100%{left:100%} }
@@ -44,12 +44,12 @@ nav{ background:rgba(12,10,7,.88); backdrop-filter:blur(18px); position:relative
 .hero-veil{ position:absolute; inset:0; background: linear-gradient(105deg, rgba(12,10,7,.45) 0%, transparent 48%), linear-gradient(to top, rgba(12,10,7,.72) 0%, transparent 44%); pointer-events:none; }
 .hero-foot{ position:absolute; bottom:0; left:0; right:0; padding:44px 52px; display:flex; align-items:flex-end; justify-content:space-between; pointer-events:none; }
 .h-title{ font-family:var(--serif); font-style:italic; font-weight:200; font-size:clamp(72px,10vw,128px); line-height:.88; letter-spacing:-.02em; color:var(--text); }
-.h-eyebrow{ font-family:var(--mono); font-size:9px; font-weight:400; letter-spacing:.3em; text-transform:uppercase; color:var(--gold); margin-bottom:12px; display:block; }
+.h-eyebrow{ font-size:9px; font-weight:500; letter-spacing:.3em; text-transform:uppercase; color:var(--gold); margin-bottom:12px; display:block; }
 .h-sub{ font-family:var(--serif); font-style:italic; font-weight:200; font-size:17px; color:rgba(232,226,213,.7); }
 .info{ background:var(--surface); border-right:1px solid var(--border); border-left:2px solid var(--gold); display:flex; flex-direction:column; justify-content:space-between; padding:52px 46px 46px; overflow-y:auto; scrollbar-width: thin; }
 .info::-webkit-scrollbar{ width:3px; background:var(--border); }
 .info::-webkit-scrollbar-thumb{ background:var(--gold); }
-.i-label{ font-family:var(--mono); font-size:9px; font-weight:400; letter-spacing:.28em; text-transform:uppercase; color:var(--text-dim); }
+.i-label{ font-size:9px; font-weight:500; letter-spacing:.28em; text-transform:uppercase; color:var(--text-dim); }
 .i-rule{ display:flex; align-items:center; gap:12px; margin:18px 0 22px; }
 .i-rule::before{ content:''; width:20px; height:1px; background:var(--gold); }
 .i-rule::after{ content:''; flex:1; height:1px; background:var(--border); }
@@ -66,28 +66,28 @@ nav{ background:rgba(12,10,7,.88); backdrop-filter:blur(18px); position:relative
 .area-blk{ margin-top:38px; }
 .area-num{ font-family:var(--serif); font-style:italic; font-weight:200; font-size:54px; line-height:1; letter-spacing:-.02em; color:var(--text); }
 .area-unit{ font-family:var(--serif); font-style:italic; font-weight:200; font-size:16px; color:var(--gold); display:inline-block; margin-left:5px; }
-.area-label{ font-family:var(--mono); font-size:9px; font-weight:400; letter-spacing:.24em; text-transform:uppercase; color:var(--text-dim); margin-top:10px; display:block; }
+.area-label{ font-size:9px; font-weight:500; letter-spacing:.24em; text-transform:uppercase; color:var(--text-dim); margin-top:10px; display:block; }
 .sec-lbl{ position:absolute; bottom:36px; left:28px; z-index:2; display:flex; align-items:center; gap:10px; pointer-events:none; }
-.sec-lbl-num{ font-family:var(--mono); font-style:normal; font-weight:400; font-size:11px; color:rgba(232,226,213,.5); }
-.sec-lbl-name{ font-family:var(--mono); font-size:9px; font-weight:400; letter-spacing:.22em; text-transform:uppercase; color:rgba(232,226,213,.4); }
+.sec-lbl-num{ font-family:var(--serif); font-style:italic; font-weight:200; font-size:11px; color:rgba(232,226,213,.5); }
+.sec-lbl-name{ font-size:9px; font-weight:500; letter-spacing:.22em; text-transform:uppercase; color:rgba(232,226,213,.4); }
 .sec-lbl::before{ content:''; width:18px; height:1px; background:rgba(200,128,60,.4); }
 .wm{ position:absolute; bottom:-10px; right:-8px; font-family:var(--serif); font-style:italic; font-weight:200; font-size:clamp(130px,16vw,200px); line-height:1; color:rgba(255,255,255,.05); pointer-events:none; z-index:1; letter-spacing:-.04em; user-select:none; }
 .concept{ background:var(--bg2); border-left:1px solid var(--border); border-right:1px solid var(--border); display:flex; flex-direction:column; justify-content:center; padding:64px 44px; position:relative; overflow:hidden; }
 .concept-bg{ position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); font-family:var(--serif); font-style:italic; font-weight:200; font-size:clamp(100px,14vw,160px); letter-spacing:-.04em; white-space:nowrap; color:rgba(232,226,213,.04); pointer-events:none; user-select:none; line-height:1; }
-.concept-label{ font-family:var(--mono); font-size:9px; font-weight:400; letter-spacing:.28em; text-transform:uppercase; color:var(--gold); margin-bottom:28px; display:flex; align-items:center; gap:12px; }
+.concept-label{ font-size:9px; font-weight:500; letter-spacing:.28em; text-transform:uppercase; color:var(--gold); margin-bottom:28px; display:flex; align-items:center; gap:12px; }
 .concept-label::after{ content:''; width:24px; height:1px; background:var(--gold); opacity:.4; }
 .qmark{ font-family:var(--serif); font-weight:200; font-size:64px; line-height:.65; color:var(--gold); opacity:.35; margin-bottom:10px; }
 .qtext{ font-family:var(--serif); font-style:italic; font-weight:200; font-size:clamp(18px,2vw,22px); line-height:1.65; color:var(--text); margin-bottom:38px; }
 .qtext strong{ font-style:normal; font-weight:300; color:var(--gold); }
 .mat-row{ display:flex; flex-wrap:wrap; gap:6px; margin-top:32px; }
-.mat{ font-family:var(--mono); font-size:9px; font-weight:400; letter-spacing:.2em; text-transform:uppercase; color:var(--text-dim); padding:5px 12px; border:1px solid var(--border); transition:all .3s; }
+.mat{ font-size:9px; font-weight:500; letter-spacing:.2em; text-transform:uppercase; color:var(--text-dim); padding:5px 12px; border:1px solid var(--border); transition:all .3s; }
 .mat:hover{ background:var(--gold); color:var(--bg); border-color:var(--gold); }
 .end-img{ width:100%; height:100%; object-fit:cover; display:block; cursor:pointer; }
 .end-veil{ position:absolute; inset:0; background:linear-gradient(to top, rgba(12,10,7,.82) 0%, rgba(12,10,7,.18) 55%, transparent 100%); pointer-events:none; }
 .end-foot{ position:absolute; bottom:0; left:0; right:0; padding:52px 56px; display:flex; align-items:flex-end; justify-content:space-between; pointer-events:none; }
 .end-q{ font-family:var(--serif); font-style:italic; font-weight:200; font-size:clamp(18px,2.4vw,30px); line-height:1.5; color:var(--text); max-width:520px; }
 .end-meta{ text-align:right; }
-.end-tag{ font-family:var(--mono); font-size:9px; font-weight:400; letter-spacing:.24em; text-transform:uppercase; color:var(--gold); margin-bottom:10px; display:block; }
+.end-tag{ font-size:9px; font-weight:500; letter-spacing:.24em; text-transform:uppercase; color:var(--gold); margin-bottom:10px; display:block; }
 .end-name{ font-family:var(--serif); font-style:italic; font-weight:200; font-size:18px; color:rgba(232,226,213,.75); }
 
 /* BACK BUTTON - TOP LEFT CORNER */
@@ -107,9 +107,9 @@ nav{ background:rgba(12,10,7,.88); backdrop-filter:blur(18px); position:relative
   transition: all 0.3s ease;
   cursor: pointer;
   text-decoration: none;
-  font-family: var(--mono);
-  font-size: 9px;
-  font-weight: 400;
+  font-family: 'Syne', sans-serif;
+  font-size: 11px;
+  font-weight: 500;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--text);
@@ -139,7 +139,7 @@ nav{ background:rgba(12,10,7,.88); backdrop-filter:blur(18px); position:relative
 .lb-img{ max-width:90vw; max-height:85vh; object-fit:contain; box-shadow:0 25px 45px rgba(0,0,0,.4); border-radius:2px; cursor:default; }
 .lb-close{ position:fixed; top:28px; right:32px; width:44px; height:44px; background:rgba(255,255,255,.05); border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:32px; font-weight:200; color:var(--gold); transition:all .2s; cursor:pointer; backdrop-filter:blur(8px); border:1px solid rgba(232,226,213,.2); }
 .lb-close:hover{ background:rgba(200,128,60,.2); transform:scale(1.02); color:#fff; }
-.lb-caption{ position:fixed; bottom:24px; left:0; right:0; text-align:center; font-family:var(--mono); font-size:9px; letter-spacing:.2em; text-transform:uppercase; color:rgba(232,226,213,.6); font-weight:400; pointer-events:none; }
+.lb-caption{ position:fixed; bottom:24px; left:0; right:0; text-align:center; font-size:11px; letter-spacing:.2em; text-transform:uppercase; color:rgba(232,226,213,.6); font-weight:300; pointer-events:none; }
 
 @media (max-width:720px){
   .back-projects-btn{ top: 68px; left: 16px; padding: 6px 16px; font-size: 9px; gap: 8px; }
@@ -192,30 +192,70 @@ nav{ background:rgba(12,10,7,.88); backdrop-filter:blur(18px); position:relative
     <span class="wm">01</span>
   </div>
 
-  <!-- INFO panel: detailed stats -->
-  <div class="p info" style="width:440px">
-    <div>
-      <p class="i-label" data-en="Nowak Studio · Michal Nowak & Patryk Kusz" data-vi="Nowak Studio · Michal Nowak & Patryk Kusz">Nowak Studio · Michal Nowak & Patryk Kusz</p>
-      <div class="i-rule"></div>
-      <p class="i-sub" data-en="High-end 3D architectural visualization" data-vi="Hình ảnh kiến trúc 3D cao cấp">High-end 3D architectural visualization</p>
-      <h2 class="i-title">House in<br>Charlotte</h2>
-      <div class="i-body">
-        <p data-en="This project is a high-end 3D architectural visualization titled 'House in Charlotte,' created by Michal Nowak and Patryk Kusz from Nowak Studio. The project showcases incredibly photorealistic renderings of both the exterior architecture and the interior design of a modern residence. Set against a backdrop of lush nature and trees, the visualizations highlight the seamless flow between the outdoor environments (patios, landscaping, and structural facade) and the warm, contemporary indoor living spaces. Created using Autodesk 3ds Max, Corona Renderer, Adobe Photoshop, Lightroom, and Creative Cloud, every detail has been meticulously crafted to achieve an unparalleled level of realism." data-vi="Dự án này là một hình ảnh kiến trúc 3D cao cấp có tên 'House in Charlotte,' được tạo bởi Michal Nowak và Patryk Kusz từ Nowak Studio. Dự án trưng bày các kết xuất siêu thực đến khó tin của cả kiến trúc ngoại thất và thiết kế nội thất của một ngôi nhà hiện đại. Lấy bối cảnh thiên nhiên tươi tốt và cây cối, các hình ảnh trực quan làm nổi bật sự kết nối liền mạch giữa môi trường ngoài trời (sân hiên, cảnh quan và mặt tiền cấu trúc) và không gian sống nội thất ấm áp, đương đại. Được tạo bằng Autodesk 3ds Max, Corona Renderer, Adobe Photoshop, Lightroom và Creative Cloud, mọi chi tiết đều được chế tác tỉ mỉ để đạt được mức độ chân thực vô song.">This project is a high-end 3D architectural visualization titled 'House in Charlotte,' created by Michal Nowak and Patryk Kusz from Nowak Studio. The project showcases incredibly photorealistic renderings of both the exterior architecture and the interior design of a modern residence. Set against a backdrop of lush nature and trees, the visualizations highlight the seamless flow between the outdoor environments (patios, landscaping, and structural facade) and the warm, contemporary indoor living spaces. Created using Autodesk 3ds Max, Corona Renderer, Adobe Photoshop, Lightroom, and Creative Cloud, every detail has been meticulously crafted to achieve an unparalleled level of realism.</p>
-      </div>
-      <ul class="svc-list">
-        <li class="svc-item"><span class="svc-name" data-en="3D Architectural Visualization" data-vi="Hình ảnh kiến trúc 3D">3D Architectural Visualization</span><span class="svc-num">01</span></li>
-        <li class="svc-item"><span class="svc-name" data-en="Exterior Rendering" data-vi="Kết xuất ngoại thất">Exterior Rendering</span><span class="svc-num">02</span></li>
-        <li class="svc-item"><span class="svc-name" data-en="Interior Design" data-vi="Thiết kế nội thất">Interior Design</span><span class="svc-num">03</span></li>
-      </ul>
+<!-- INFO panel: detailed stats -->
+<div class="p info" style="width:440px">
+  <div>
+    <p class="i-label"
+       data-en="Personal Project · Archviz Portfolio"
+       data-vi="Dự án cá nhân · Portfolio Archviz">
+       Personal Project · Archviz Portfolio
+    </p>
+
+    <div class="i-rule"></div>
+
+    <p class="i-sub"
+       data-en="High-end 3D architectural visualization"
+       data-vi="Hình ảnh kiến trúc 3D cao cấp">
+       High-end 3D architectural visualization
+    </p>
+
+    <h2 class="i-title">House in<br>Charlotte</h2>
+
+    <div class="i-body">
+      <p
+        data-en="This project is a high-end 3D architectural visualization of a modern residential house. The focus was on achieving photorealistic lighting, natural material response, and a seamless connection between interior and exterior spaces. The environment integrates lush greenery and soft daylight to enhance realism and atmosphere. Every element—from composition to post-production—was carefully crafted to deliver a premium visual experience."
+        
+        data-vi="Dự án này là một hình ảnh kiến trúc 3D cao cấp của một ngôi nhà hiện đại. Trọng tâm là đạt được ánh sáng chân thực, vật liệu tự nhiên và sự kết nối liền mạch giữa không gian nội thất và ngoại thất. Môi trường được kết hợp với cây xanh và ánh sáng tự nhiên để tăng độ chân thực và cảm xúc. Mọi yếu tố từ bố cục đến hậu kỳ đều được tinh chỉnh để mang lại trải nghiệm hình ảnh cao cấp.">
+        
+        This project is a high-end 3D architectural visualization of a modern residential house. The focus was on achieving photorealistic lighting, natural material response, and a seamless connection between interior and exterior spaces. The environment integrates lush greenery and soft daylight to enhance realism and atmosphere. Every element—from composition to post-production—was carefully crafted to deliver a premium visual experience.
+      </p>
     </div>
-    <div class="area-blk">
-      <span class="area-num">Nowak</span><span class="area-unit">Studio</span>
-      <span class="area-label" data-en="3ds Max · Corona · Photoshop · Lightroom" data-vi="3ds Max · Corona · Photoshop · Lightroom">3ds Max · Corona · Photoshop · Lightroom</span>
-      <div style="margin-top:12px; border-top:1px solid var(--border); padding-top:14px;">
-        <span class="area-label" style="margin-top:0" data-en="Lush nature · Seamless indoor-outdoor flow" data-vi="Thiên nhiên tươi tốt · Kết nối trong - ngoài liền mạch">Lush nature · Seamless indoor-outdoor flow</span>
-      </div>
+
+    <ul class="svc-list">
+      <li class="svc-item">
+        <span class="svc-name" data-en="3D Modeling" data-vi="Dựng hình 3D">3D Modeling</span>
+        <span class="svc-num">01</span>
+      </li>
+      <li class="svc-item">
+        <span class="svc-name" data-en="Lighting & Rendering" data-vi="Ánh sáng & Kết xuất">Lighting & Rendering</span>
+        <span class="svc-num">02</span>
+      </li>
+      <li class="svc-item">
+        <span class="svc-name" data-en="Post-Production" data-vi="Hậu kỳ">Post-Production</span>
+        <span class="svc-num">03</span>
+      </li>
+    </ul>
+  </div>
+
+  <div class="area-blk">
+    <span class="area-unit">Tools</span>
+    <span class="area-unit">Used</span>
+
+    <span class="area-label"
+      data-en="3ds Max · Corona Renderer · Photoshop"
+      data-vi="3ds Max · Corona Renderer · Photoshop">
+      3ds Max · Corona Renderer · Photoshop
+    </span>
+
+    <div style="margin-top:12px; border-top:1px solid var(--border); padding-top:14px;">
+      <span class="area-label" style="margin-top:0"
+        data-en="Focus: Realistic lighting · Natural materials · Indoor-outdoor harmony"
+        data-vi="Trọng tâm: Ánh sáng chân thực · Vật liệu tự nhiên · Kết nối trong - ngoài">
+        Focus: Realistic lighting · Natural materials · Indoor-outdoor harmony
+      </span>
     </div>
   </div>
+</div>
 
   <!-- GALLERY PANEL 1: Interior View 1 - Living/Detail View -->
   <div class="p pi" style="width:52vw" data-i="1">
@@ -232,18 +272,34 @@ nav{ background:rgba(12,10,7,.88); backdrop-filter:blur(18px); position:relative
   </div>
 
   <!-- CONCEPT PANEL -->
-  <div class="p concept" style="width:400px">
-    <div class="concept-bg">Charlotte</div>
-    <div class="concept-label" data-en="The Vision" data-vi="Tầm nhìn">The Vision</div>
-    <div class="qmark">"</div>
-    <p class="qtext" data-en="Incredibly photorealistic renderings showcasing the seamless flow between <strong>outdoor environments and warm, contemporary indoor living spaces.</strong> Every detail meticulously crafted for unparalleled realism." data-vi="Các kết xuất siêu thực đến khó tin thể hiện sự kết nối liền mạch giữa <strong>môi trường ngoài trời và không gian sống nội thất ấm áp, đương đại.</strong> Mọi chi tiết đều được chế tác tỉ mỉ để đạt được sự chân thực vô song.">Incredibly photorealistic renderings showcasing the seamless flow between <strong>outdoor environments and warm, contemporary indoor living spaces.</strong> Every detail meticulously crafted for unparalleled realism.</p>
-    <div class="mat-row">
-      <span class="mat" data-en="3ds Max" data-vi="3ds Max">3ds Max</span>
-      <span class="mat" data-en="Corona Renderer" data-vi="Corona Renderer">Corona Renderer</span>
-      <span class="mat" data-en="Photoshop" data-vi="Photoshop">Photoshop</span>
-      <span class="mat" data-en="Lightroom" data-vi="Lightroom">Lightroom</span>
-    </div>
+<div class="p concept" style="width:420px">
+
+  <div class="concept-bg">Concept</div>
+
+  <div class="concept-label"
+    data-en="Design Approach"
+    data-vi="Cách tiếp cận thiết kế">
+    Design Approach
   </div>
+
+  <div class="qmark">"</div>
+
+  <p class="qtext"
+    data-en="This project explores the balance between <strong>controlled architectural composition and natural atmosphere.</strong> The focus was not only on realism, but on how light, materials, and space create an emotional response. Every frame is treated as a cinematic moment — where softness, contrast, and depth guide the viewer through the space."
+
+    data-vi="Dự án này khám phá sự cân bằng giữa <strong>bố cục kiến trúc có kiểm soát và bầu không khí tự nhiên.</strong> Trọng tâm không chỉ là độ chân thực mà còn là cách ánh sáng, vật liệu và không gian tạo ra cảm xúc. Mỗi khung hình được xử lý như một khoảnh khắc điện ảnh — nơi độ mềm, tương phản và chiều sâu dẫn dắt người xem.">
+    
+    This project explores the balance between <strong>controlled architectural composition and natural atmosphere.</strong> The focus was not only on realism, but on how light, materials, and space create an emotional response. Every frame is treated as a cinematic moment — where softness, contrast, and depth guide the viewer through the space.
+  </p>
+
+  <div class="mat-row">
+    <span class="mat" data-en="Cinematic Lighting" data-vi="Ánh sáng điện ảnh">Cinematic Lighting</span>
+    <span class="mat" data-en="Material Realism" data-vi="Vật liệu chân thực">Material Realism</span>
+    <span class="mat" data-en="Spatial Composition" data-vi="Bố cục không gian">Spatial Composition</span>
+    <span class="mat" data-en="Atmosphere Design" data-vi="Thiết kế bầu không khí">Atmosphere Design</span>
+  </div>
+
+</div>
 
   <!-- GALLERY PANEL 3: Interior View 3 - Main living space -->
   <div class="p pi" style="width:50vw" data-i="3">
@@ -273,20 +329,52 @@ nav{ background:rgba(12,10,7,.88); backdrop-filter:blur(18px); position:relative
     <span class="wm">07</span>
   </div>
 
-  <!-- CLOSING / RESULT PANEL: final statement -->
-  <div class="p pi" style="width:86vw" data-i="7">
-    <img class="end-img" src="https://mir-s3-cdn-cf.behance.net/project_modules/source/af28bf236250335.69067cfde2ef4.jpg" alt="House in Charlotte - photorealistic architecture" data-full="https://mir-s3-cdn-cf.behance.net/project_modules/source/af28bf236250335.69067cfde2ef4.jpg">
-    <div class="end-veil"></div>
-    <div class="end-foot">
-      <p class="end-q" data-en="House in Charlotte represents the pinnacle of photorealistic architectural visualization. Set against a backdrop of lush nature and trees, the visualizations highlight the seamless flow between outdoor environments and warm, contemporary indoor living spaces — a true testament to the artistry of Nowak Studio." data-vi="House in Charlotte đại diện cho đỉnh cao của hình ảnh kiến trúc siêu thực. Lấy bối cảnh thiên nhiên tươi tốt và cây cối, các hình ảnh trực quan làm nổi bật sự kết nối liền mạch giữa môi trường ngoài trời và không gian sống nội thất ấm áp, đương đại — một minh chứng thực sự cho nghệ thuật của Nowak Studio.">House in Charlotte represents the pinnacle of photorealistic architectural visualization. Set against a backdrop of lush nature and trees, the visualizations highlight the seamless flow between outdoor environments and warm, contemporary indoor living spaces — a true testament to the artistry of Nowak Studio.</p>
-      <div class="end-meta">
-        <span class="end-tag" data-en="Nowak Studio · ArchViz" data-vi="Nowak Studio · ArchViz">Nowak Studio · ArchViz</span>
-        <p class="end-name">House in Charlotte · Photorealistic</p>
-      </div>
+ <!-- CLOSING / RESULT PANEL: final statement -->
+<div class="p pi" style="width:86vw" data-i="7">
+
+  <img class="end-img"
+    src="https://mir-s3-cdn-cf.behance.net/project_modules/source/af28bf236250335.69067cfde2ef4.jpg"
+    alt="House in Charlotte - photorealistic architecture"
+    data-full="https://mir-s3-cdn-cf.behance.net/project_modules/source/af28bf236250335.69067cfde2ef4.jpg">
+
+  <div class="end-veil"></div>
+
+  <div class="end-foot">
+
+    <!-- FINAL STATEMENT -->
+    <p class="end-q"
+      data-en="This project reflects my approach to architectural visualization — where light, material, and composition are used to shape emotion, not just realism. Each frame is designed to feel intentional, immersive, and visually timeless."
+      
+      data-vi="Dự án này phản ánh cách tôi tiếp cận hình ảnh kiến trúc — nơi ánh sáng, vật liệu và bố cục được sử dụng để tạo cảm xúc, không chỉ là độ chân thực. Mỗi khung hình đều được thiết kế có chủ đích, mang tính trải nghiệm và vượt thời gian.">
+      
+      This project reflects my approach to architectural visualization — where light, material, and composition are used to shape emotion, not just realism. Each frame is designed to feel intentional, immersive, and visually timeless.
+    </p>
+
+    <!-- YOUR IDENTITY -->
+    <div class="end-meta">
+
+      <span class="end-tag"
+        data-en="Mars Bansiti · ArchViz"
+        data-vi="Mars Bansiti · ArchViz">
+        Mars Bansiti · ArchViz
+      </span>
+
+      <p class="end-name">House in Charlotte · 2026</p>
+
+      <!-- OPTIONAL CTA -->
+      <p class="end-name" style="margin-top:6px; opacity:.7;"
+        data-en="Available for freelance projects"
+        data-vi="Sẵn sàng cho dự án freelance">
+        Available for freelance projects
+      </p>
+
     </div>
-    <span class="wm" style="font-size:clamp(100px,13vw,170px)">08</span>
+
   </div>
-</div></div>
+
+  <span class="wm" style="font-size:clamp(100px,13vw,170px)">08</span>
+
+</div>
 
 <div id="counter">
   <span id="cnt-cur">01</span>
@@ -373,31 +461,12 @@ document.addEventListener('keydown', (e) => { if(lightbox.classList.contains('ac
   requestAnimationFrame(loop);
 })();
 
-// Language system: Vietnamese default, EN toggle (mirrors index.html)
-(function(){
-  var STORAGE_KEY = 'mb_lang';
-  var lang = localStorage.getItem(STORAGE_KEY) || 'vi';
-
-  function applyLang(l){
-    lang = l;
-    localStorage.setItem(STORAGE_KEY, l);
-    document.documentElement.lang = l;
-
-    document.querySelectorAll('[data-en]').forEach(function(el){
-      var val = l === 'en' ? el.getAttribute('data-en') : el.getAttribute('data-vi');
-      if(val !== null) el.innerHTML = val;
-    });
-
-    var btn = document.getElementById('lang-btn');
-    if(btn) btn.textContent = l === 'vi' ? 'EN' : 'VI';
-  }
-
-  window.toggleLang = function(){
-    applyLang(lang === 'vi' ? 'en' : 'vi');
-  };
-
-  applyLang(lang);
-})();
+// Language toggle (shared.js compatible fallback)
+function toggleLang() {
+  const btn = document.getElementById('lang-btn');
+  if(btn.textContent === 'EN') btn.textContent = 'VI';
+  else btn.textContent = 'EN';
+}
 </script>
 </body>
 </html>
