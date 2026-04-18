@@ -38,3 +38,12 @@ nav::before{content:'';position:absolute;inset:0;background:linear-gradient(to b
   overflow-x: auto;
   overflow-y: hidden;
 }
+body, p, span, div {
+    font-size: 15px !important; 
+    line-height: 1.6 !important;
+}
+
+p {
+    margin-bottom: 24px !important; 
+    text-align: justify !important; 
+}
