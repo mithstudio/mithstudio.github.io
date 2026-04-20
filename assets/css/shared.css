@@ -44,9 +44,10 @@ p {
     margin-bottom: 24px !important; 
     text-align: justify !important; 
 }
-/* Tắt chế độ tàng hình, ép mọi nội dung phải hiển thị ngay lập tức */
-.fade-in, .fade-in-up, .fade-in-left, .fade-in-right, .reveal, [class*="fade-"] {
+/* Ép chữ PORTFOLIO khổng lồ ở trang chủ hiện ra */
+.s1-bleed, .s1-bleed-word, .s1-h {
     opacity: 1 !important;
-    transform: none !important;
     visibility: visible !important;
+    transform: none !important;
+    display: block !important;
 }
