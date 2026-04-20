@@ -63,7 +63,12 @@ p {
     
     /* Thu nhỏ chữ PORTFOLIO khổng lồ */
     .s1-bleed, .s1-bleed-word, .s1-h {
-        font-size: 50px !important; /* Thu nhỏ lại để không tràn viền */
+        font-size: 50px !important; 
         line-height: 1.2 !important;
+    }
+
+    /* Sửa lỗi giãn chữ, ép căn trái cho các đoạn văn bản trên điện thoại */
+    p, .s1-sub, [class*="-sub"] {
+        text-align: left !important;
     }
 }
